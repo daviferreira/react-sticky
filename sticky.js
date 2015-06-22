@@ -26,15 +26,11 @@ var Sticky = React.createClass({
   },
 
   top: function() {
-    return this.getDOMNode().getBoundingClientRect().top;
+    return this.getDOMNode().parentNode.getBoundingClientRect().top;
   },
 
   shouldBeSticky: function() {
-    var position = this.getDOMNode().style.position;
-    this.getDOMNode().style.position = 'relative';
-    var shouldBeSticky = this.top() <= -this.props.topOffset;
-    this.getDOMNode().style.position = position;
-    return shouldBeSticky;
+    return this.top() <= -this.props.topOffset;
   },
 
   handleTick: function() {
