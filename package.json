@@ -36,8 +36,5 @@
   "bugs": {
     "url": "https://github.com/captivationsoftware/react-sticky/issues"
   },
-  "homepage": "https://github.com/captivationsoftware/react-sticky",
-  "peerDependencies": {
-    "react": "0.x"
-  }
+  "homepage": "https://github.com/captivationsoftware/react-sticky"
 }
